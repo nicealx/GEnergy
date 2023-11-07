@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, initial-scale=1.0">
+	<title>Рейтинг - G-Club Professional</title>
+
+	<link rel="apple-touch-icon"
+				sizes="180x180"
+				href="./favicon/apple-touch-icon.png">
+	<link rel="icon"
+				type="image/png"
+				sizes="32x32"
+				href="./favicon/favicon-32x32.png">
+	<link rel="icon"
+				type="image/png"
+				sizes="16x16"
+				href="./favicon/favicon-16x16.png">
+	<link rel="manifest"
+				href="./favicon/site.webmanifest">
+	<link rel="mask-icon"
+				href="./favicon/safari-pinned-tab.svg"
+				color="#5bbad5">
+	<meta name="msapplication-TileColor"
+				content="#da532c">
+	<meta name="theme-color"
+				content="#ffffff">
+	<link rel="preconnect"
+				href="https://fonts.googleapis.com">
+	<link rel="preconnect"
+				href="https://fonts.gstatic.com"
+				crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+				rel="stylesheet">
+
+	<script src="./auth/assets/plugins/jquery/jquery-3.6.0.min.js"></script>
+
+	<!--jQueryUI-->
+	<link href="./css/jquery-ui.css"
+				rel="stylesheet">
+	<!--Loader-->
+	<link href="./css/loader.css"
+				rel="stylesheet">
+
+	<link type="text/css"
+				href="./css/jquery.fancybox.min.css"
+				rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet"
+				href="./css/bootstrap-select.min.css">
+
+	<link type="text/css"
+				href="./css/bootstrap.min.css"
+				rel="stylesheet">
+	<link type="text/css"
+				href="./css/datepicker.min.css"
+				rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<link type="text/css"
+				href="./css/main.min.css"
+				rel="stylesheet">
+	<link rel="stylesheet"
+				href="./css/style.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__wrap">
+					<div class="header__burger">
+						<span></span>
+					</div>
+
+					<nav class="header__menu menu menu__main">
+						<ul class="menu__list">
+							<li>
+								<a href="./atp-main.html"
+									 class="menu__link">О клубе</a>
+							</li>
+							<li>
+								<a href="./atp-sale.html"
+									 class="menu__link">Продажи</a>
+							</li>
+							<li>
+								<a href="./atp-prize.html"
+									 class="menu__link">призы</a>
+							</li>
+							<li>
+								<a href="./atp-education.html"
+									 class="menu__link">обучение</a>
+							</li>
+							<li>
+								<a href="./atp-rating.html"
+									 class="menu__link menu__link--active">Рейтинги</a>
+							</li>
+							<li>
+								<a href="./atp-days.html"
+									 class="menu__link">дни открытых <br> дверей</a>
+							</li>
+							<li class="lk">
+								<a href="./atp-lk.html"
+									 class="menu__link lk__link">Личный кабинет</a>
+								<ul class="lk__list">
+									<li class="lk__name">
+										<a href="./auth.html">Константиновский а.и.</a>
+									</li>
+								</ul>
+								<div class="lk__store store">
+									<div class="store__title">Выберите торговую точку</div>
+									<ul class="store__list">
+										<li class="store__item"><a href="./atp-lk.html"
+												 class="store__link">«Центр Автомасел «Оил Сервис»</a></li>
+										<li class="store__item"><a href="./atp-lk.html"
+												 class="store__link">Оил Сервис</a></li>
+										<li class="store__item"><a href="./atp-lk.html"
+												 class="store__link">Ваз-сервис</a></li>
+										<li class="store__item"><a href="./atp-lk.html"
+												 class="store__link">ООО Техноком-авто</a></li>
+										<li class="store__item"><a href="./atp-lk.html"
+												 class="store__link">Оил — Сервис</a></li>
+										<li class="store__item"><a href="./atp-lk.html"
+												 class="store__link">Ges «Оренойл-маркет</a></li>
+										<li class="store__item store__btn"><a href="#"
+												 class="store__link"
+												 data-bs-toggle="modal"
+												 data-bs-target="#modal-add">Добавить торговую точку</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+
+					<a href="./atp-main.html"
+						 class="header__logo">
+						<img src="./images/logo.svg"
+								 alt="logo"
+								 class="logo">
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="header__body">
+			<div class="container">
+				<div class="header__content">
+					<h1 class="header__title">Рейтинг</h1>
+					<p class="header__subtitle">Лидеры по объему продаж и прохождению обучения</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="rating">
+		<div class="container">
+			<div class="rating__content">
+				<div class="tabs">
+					<div class="tabs__body">
+						<div class="tab__content">
+							<div class="tab__col tab__info">
+								<div class="tab">продажи по РФ</div>
+								<div class="tab__info-top">
+									<div class="tab__info-rating tab__info-rating--orange">
+										<span>17</span> место
+									</div>
+									<div class="tab__info-value">
+										<span>17,7 Т</span> <br> Объём закупок всего
+									</div>
+									<div class="tab__info-rating">
+										<span>360,0</span> бонусов <br> всего
+									</div>
+								</div>
+
+								<table class="tab__info-position position">
+									<tr class="position__item">
+										<td class="position__number">15</td>
+										<td class="position__name">Валерий Ч.</td>
+										<td class="position__score">499,5</td>
+									</tr>
+									<tr class="position__item">
+										<td class="position__number">16</td>
+										<td class="position__name">Алексей Д.</td>
+										<td class="position__score">389,0</td>
+									</tr>
+									<tr class="position__item position__item--active">
+										<td class="position__number">17</td>
+										<td class="position__name">Александр Н.</td>
+										<td class="position__score">360,0</td>
+									</tr>
+									<tr class="position__item">
+										<td class="position__number">18</td>
+										<td class="position__name">Алексей Б.</td>
+										<td class="position__score">350,0</td>
+									</tr>
+									<tr class="position__item">
+										<td class="position__number">19</td>
+										<td class="position__name">Илья Ф.</td>
+										<td class="position__score">323,9</td>
+									</tr>
+								</table>
+							</div>
+							<div class="tab__col tab__info">
+
+								<div class="tab">продажи по региону</div>
+								<div class="tab__info-top">
+									<div class="tab__info-rating tab__info-rating--orange">
+										<span>3</span> место
+									</div>
+									<div class="tab__info-value">
+										<span>9,3 Т</span> <br> Объём закупок всего
+									</div>
+									<div class="tab__info-rating">
+										<span>199,0</span> бонусов <br> всего
+									</div>
+								</div>
+								<table class="tab__info-position position">
+									<tr class="position__item">
+										<td class="position__number">1</td>
+										<td class="position__name">Павел С.</td>
+										<td class="position__score">4509</td>
+									</tr>
+									<tr class="position__item">
+										<td class="position__number">2</td>
+										<td class="position__name">Вероника Я.</td>
+										<td class="position__score">210,0</td>
+									</tr>
+									<tr class="position__item position__item--active">
+										<td class="position__number">3</td>
+										<td class="position__name">Александр Н.</td>
+										<td class="position__score">199,0</td>
+									</tr>
+									<tr class="position__item">
+										<td class="position__number">4</td>
+										<td class="position__name">Сергей Г.</td>
+										<td class="position__score">149,0</td>
+									</tr>
+									<tr class="position__item">
+										<td class="position__number">5</td>
+										<td class="position__name">Асель С.</td>
+										<td class="position__score">137,0</td>
+									</tr>
+								</table>
+							</div>
+							<div class="tab__col tab__info">
+
+								<div class="tab">рейтинг за обучение</div>
+								<div class="tab__info-top">
+									<div class="tab__info-rating tab__info-rating--orange">
+										<span>105</span> место
+									</div>
+									<div class="tab__info-value">
+										<p><span>5</span> из 7</p> Правильных ответов
+									</div>
+									<div class="tab__info-rating tab__info-time">
+										<div class="tab__info-time">
+											<span class="tab__info-min">02</span>:<span class="tab__info-sec">44</span>:<span
+														class="tab__info-mill">387</span>
+										</div>
+										время теста
+									</div>
+								</div>
+								<table class="tab__info-position position">
+									<tr class="position__item">
+										<td class="position__number">103</td>
+										<td class="position__name">Сергей Г.</td>
+										<td class="position__score">
+											<span class="postion__score-corret">5</span> за
+											<span class="position__score-min">02</span>:<span class="position__score-sec">38</span>:<span
+														class="position__score-mill">219</span>
+										</td>
+									</tr>
+									<tr class="position__item">
+										<td class="position__number">104</td>
+										<td class="position__name">Асель С.</td>
+										<td class="position__score">
+											<span class="postion__score-corret">5</span> за
+											<span class="position__score-min">02</span>:<span class="position__score-sec">40</span>:<span
+														class="position__score-mill">345</span>
+										</td>
+									</tr>
+									<tr class="position__item position__item--active">
+										<td class="position__number">105</td>
+										<td class="position__name">Александр Н.</td>
+										<td class="position__score">
+											<span class="postion__score-corret">5</span> за
+											<span class="position__score-min">02</span>:<span class="position__score-sec">44</span>:<span
+														class="position__score-mill">387</span>
+										</td>
+									</tr>
+									<tr class="position__item">
+										<td class="position__number">106</td>
+										<td class="position__name">Илья Ф.</td>
+										<td class="position__score">
+											<span class="postion__score-corret">5</span> за
+											<span class="position__score-min">02</span>:<span class="position__score-sec">47</span>:<span
+														class="position__score-mill">399</span>
+										</td>
+									</tr>
+									<tr class="position__item">
+										<td class="position__number">107</td>
+										<td class="position__name">Валерий Ч.</td>
+										<td class="position__score">
+											<span class="postion__score-corret">5</span> за
+											<span class="position__score-min">02</span>:<span class="position__score-sec">50</span>:<span
+														class="position__score-mill">510</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="winners">
+		<div class="container">
+			<div class="winners__content">
+				<h2 class="winners__title title">Победители</h2>
+				<div class="winners__country">
+					<p class="winners__text text">Лучшие по продажам РФ</p>
+					<div class="winners__items">
+						<div class="winners__item">
+							<img src="./images/rating/first.svg"
+									 alt="first"
+									 class="winners__img">
+							<p class="winners__place">1 место</p>
+							<p class="winners__firstname">Имя</p>
+							<p class="winners__lastname">Фамилия</p>
+						</div>
+						<div class="winners__item">
+							<img src="./images/rating/second.svg"
+									 alt="second"
+									 class="winners__img">
+							<p class="winners__place">2 место</p>
+							<p class="winners__firstname">Имя</p>
+							<p class="winners__lastname">Фамилия</p>
+						</div>
+						<div class="winners__item">
+							<img src="./images/rating/third.svg"
+									 alt="third"
+									 class="winners__img">
+							<p class="winners__place">3 место</p>
+							<p class="winners__firstname">Имя</p>
+							<p class="winners__lastname">Фамилия</p>
+						</div>
+					</div>
+				</div>
+				<div class="winners__region">
+					<p class="winners__text text">Лучшие по продажам в регионе</p>
+					<div class="winners__items">
+						<div class="winners__item">
+							<img src="./images/rating/first.svg"
+									 alt="first"
+									 class="winners__img">
+							<p class="winners__place">1 место</p>
+							<p class="winners__firstname">Имя</p>
+							<p class="winners__lastname">Фамилия</p>
+						</div>
+						<div class="winners__item">
+							<img src="./images/rating/second.svg"
+									 alt="second"
+									 class="winners__img">
+							<p class="winners__place">2 место</p>
+							<p class="winners__firstname">Имя</p>
+							<p class="winners__lastname">Фамилия</p>
+						</div>
+						<div class="winners__item">
+							<img src="./images/rating/third.svg"
+									 alt="third"
+									 class="winners__img">
+							<p class="winners__place">3 место</p>
+							<p class="winners__firstname">Имя</p>
+							<p class="winners__lastname">Фамилия</p>
+						</div>
+						<div class="winners__item">
+							<img src="./images/rating/fourth.svg"
+									 alt="fourth"
+									 class="winners__img">
+							<p class="winners__place">4 место</p>
+							<p class="winners__firstname">Имя</p>
+							<p class="winners__lastname">Фамилия</p>
+						</div>
+						<div class="winners__item">
+							<img src="./images/rating/fifth.svg"
+									 alt="fifth"
+									 class="winners__img">
+							<p class="winners__place">5 место</p>
+							<p class="winners__firstname">Имя</p>
+							<p class="winners__lastname">Фамилия</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__top">
+				<a href="./atp-main.html">
+					<img src="./images/logo_gclub.svg"
+							 alt="logo_gclub"
+							 class="footer__logo"></a>
+				<div class="footer__menu-container">
+					<nav class="footer__menu">
+						<div class="footer__menu-title">СКАЧАТЬ</div>
+						<ul class="footer__list">
+							<li><a href="#"
+									 class="footer__link">Листовка ЛПР</a></li>
+							<li><a href="#"
+									 class="footer__link">Правила программы</a></li>
+						</ul>
+					</nav>
+
+					<nav class="footer__menu">
+						<div class="footer__menu-title">О клубе</div>
+						<ul class="footer__list">
+							<li><a href="./atp-education.html"
+									 class="footer__link">Обучение</a></li>
+							<li><a href="./atp-rating.html"
+									 class="footer__link">Рейтинги</a></li>
+						</ul>
+					</nav>
+
+					<nav class="footer__menu">
+						<div class="footer__menu-title">Инструкции</div>
+						<ul class="footer__list">
+							<li><a href="#"
+									 class="footer__link">Инструкция по подбору масел G-Energy</a></li>
+							<li><a href="#"
+									 class="footer__link">Таблица подбора масел G-Energy</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<img src="./images/logo_gazprom.svg"
+						 alt="logo_gazprom"
+						 class="footer__logo">
+				<div class="footer__info">
+					<p>ГОРЯЧАЯ ЛИНИЯ</p>
+					<p><a href="tel:88007754541"
+							 class="footer__phone">8 800 775-45-41</a><span>, клавиша 2</span></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="modal fade"
+			 id="modal-add"
+			 tabindex="-1"
+			 aria-hidden="true"
+			 aria-labelledby="modal-add">
+		<div class="modal-dialog modal-personal-details">
+			<div class="modal-content modal-personal-details-content">
+
+				<div class="modal-header">
+					<div class="modal-title">Торговая точка</div>
+					<button type="button"
+									class="btn-close"
+									data-bs-dismiss="modal"
+									aria-label="Close">
+						<svg width="12"
+								 height="12"
+								 viewbox="0 0 12 12"
+								 fill="none"
+								 xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd"
+										clip-rule="evenodd"
+										d="M0.335617 10.0462C-0.111319 10.4932 -0.111319 11.2178 0.335617 11.6647C0.782554 12.1117 1.50718 12.1117 1.95412 11.6647L6.00009 7.61875L10.0462 11.6649C10.4932 12.1118 11.2178 12.1118 11.6647 11.6649C12.1117 11.2179 12.1117 10.4933 11.6647 10.0464L7.61859 6.00025L11.6651 1.95373C12.1121 1.50679 12.1121 0.782164 11.6651 0.335228C11.2182 -0.111707 10.4936 -0.111708 10.0466 0.335228L6.00009 4.38175L1.95372 0.335382C1.50678 -0.111554 0.782152 -0.111553 0.335216 0.335382C-0.11172 0.782318 -0.111721 1.50694 0.335216 1.95388L4.38159 6.00025L0.335617 10.0462Z"
+										fill="#B3B3B3"></path>
+						</svg>
+					</button>
+				</div>
+				<div class="modal-body">
+
+					<form id="formAdd"
+								action="/api/user/registration"
+								class="ajax validate"
+								method="post">
+						<input type="hidden"
+									 name="country"
+									 value="1">
+						<input type="hidden"
+									 name="region">
+						<input type="hidden"
+									 name="area">
+						<input type="hidden"
+									 name="settlement">
+						<input type="hidden"
+									 name="addr">
+						<input type="hidden"
+									 name="token"
+									 value="">
+
+						<div class="row mx--12 mt-15">
+							<div class="col-12 px-12 mb-17">
+								<div class="pos-r">
+									<div class="pos-r">
+										<select name="distr"
+														class="selectpicker"
+														data-style="form-control input-border"
+														data-width="100%"
+														data-live-search="true"
+														title="Дистрибьютор">
+											<option value="9fab1293-0d72-4b6d-9314-dc6cf891e516">Calbor Grup SRL</option>
+											<option value="1038105a-cf59-4152-9059-7a1003d7a89e">Dw Oil Trading GmbH</option>
+											<option value="dbf36603-ead5-4f35-b02d-ea6b3819960c">Interoil-Marketing&amp;Services Kazakhstan
+											</option>
+											<option value="6871537a-07e5-47f4-afe7-5441bfd440d4">АО &quot;АПО&quot;</option>
+											<option value="cd29b44e-e12a-405f-b318-310a100b2693">АО &quot;Майнинг Солюшнс&quot;</option>
+											<option value="5faa63f1-e39e-4c16-b8ba-602e35a005db">АО &quot;Урал-нефть-сервис&quot;</option>
+											<option value="50725ede-0bab-46ee-97cd-65ba1db8d57c">Автоспейс ООО</option>
+											<option value="9962f90c-2ed1-4777-936d-363458f6808c">Белинвестторг ООО</option>
+											<option value="60b9b7e0-c879-455c-9b21-4d7a8ad1bbd4">Боникс Авто Плюс ООО</option>
+											<option value="83babf0c-338f-4683-912c-d98b4660c33c">ИП Козеев OLD</option>
+											<option value="8ce97c20-ab38-41a8-b9e3-c0358730027d">ИП Ломакина Оксана Владимировна</option>
+											<option value="6ef68531-1a43-4e06-8875-b38373386746">ИП Сушенцов Артем Александрович</option>
+											<option value="442d8c64-0b87-432d-8468-4c3910d7410e">ИП Чеховских Алексей Павлович</option>
+											<option value="36a71aec-a9a7-413f-a910-074cc5e700fb">ИП Шуралев Александр Владимирович</option>
+											<option value="eb208046-e2bb-401c-ae0f-ed946c4c4c6a">Л-авто ООО</option>
+											<option value="a2dfdc74-050b-4502-aa75-82d56b2bb145">Монретранс</option>
+											<option value="be293e82-585b-4fd9-ab95-f42e4f9c1e03">ООО &quot; Иридан-Сервис&quot;</option>
+											<option value="7574e560-9625-48c9-bba3-5f1740c3494f">ООО &quot;76Магадан&quot;</option>
+											<option value="66053bcd-90ed-4422-99cb-78c27160c3c9">ООО &quot;76Магадан-Хабаровск&quot;</option>
+											<option value="0410f755-6a68-43ff-95e2-3b3c2e038cd2">ООО &quot;АВТОРУСЬ ЛОГИСТИКА&quot;</option>
+											<option value="3b12a4a6-cd8b-4d12-8cf5-7018315e53d6">ООО &quot;АЛЕО&quot;</option>
+											<option value="19a533ff-6c62-4779-8fef-db3d33107019">ООО &quot;АМГ-Групп&quot;</option>
+											<option value="f1ca9e4b-02ab-4c85-9b15-5f37fa5332e2">ООО &quot;АМЕКС&quot;</option>
+											<option value="80e66a05-b037-4b8a-b1c9-4d49b6422317">ООО &quot;Автопартнер&quot;</option>
+											<option value="08e2a50d-6b23-42b9-8b7f-2223ec33ade3">ООО &quot;АгроМир&quot;_OLD</option>
+											<option value="4bec1156-a35c-4e25-b969-60509e1a090d">ООО &quot;Алтай-Ойл&quot;</option>
+											<option value="371d3c1d-2639-4e57-828b-545923419ab9">ООО &quot;БК-КАЛИНИНГРАД&quot;</option>
+											<option value="a9e5458a-70de-4454-b356-24666cad190c">ООО &quot;БалРесурс&quot;</option>
+											<option value="37fd79f5-a8df-4e1b-a470-63baf91c5336">ООО &quot;Бурятшинторг&quot;</option>
+											<option value="009b1a8a-105c-46a9-9a40-b7256481f995">ООО &quot;ВЛАДТОРГ&quot;</option>
+											<option value="1dc33df0-9464-4456-80da-8a219721b17a">ООО &quot;Восток-Нефть&quot;</option>
+											<option value="23924928-35f9-4e92-a005-fcfcc51e8de1">ООО &quot;ГПНТ-СМ&quot;</option>
+											<option value="eea3bff9-1c3f-42e9-b663-9201def4d8da">ООО &quot;Габарит-Авто&quot;</option>
+											<option value="c251a68d-f96f-4ee9-acd1-b8b7267eba58">ООО &quot;Гермес&quot;</option>
+											<option value="bb97335a-abea-49d0-8e3e-e15719ac18c9">ООО &quot;ГидроМир&quot;</option>
+											<option value="49c61d09-c8da-4770-b0b0-fe95de0dbce7">ООО &quot;Главмасло&quot;</option>
+											<option value="04b30a00-6929-4524-b3da-65d06c5e0be8">ООО &quot;Запад-Восток Ойл&quot;</option>
+											<option value="eccd04f6-432e-4339-8820-7db5e53ee8df">ООО &quot;Зевс&quot;</option>
+											<option value="5cafb7af-7f39-4099-a79e-d3498ed8f9a1">ООО &quot;ИСТ Трейд СМ&quot;</option>
+											<option value="7c5ab559-faa4-4092-8a7a-d6180a66b979">ООО &quot;КОМПАНИЯ НАВИГАТОР&quot;</option>
+											<option value="e42893a2-a14f-4c3c-b12a-d74bd6993e34">ООО &quot;КС-ОЙЛ&quot;</option>
+											<option value="faa95f72-22c2-42a3-93a2-f6618ad992b0">ООО &quot;КингОйл&quot;</option>
+											<option value="c4d3c4a8-c523-4ae0-aafe-af54a3ec0eff">ООО &quot;КомТек&quot;</option>
+											<option value="d1b7e505-3f4c-4947-8c1b-675e872133fb">ООО &quot;Компания Элтон&quot;</option>
+											<option value="b67b8ce4-c121-4eaa-bbe2-4b6994cc2b88">ООО &quot;Кратер&quot;</option>
+											<option value="22925fff-959a-45f4-9b2e-e193fa647778">ООО &quot;ЛК-Трейд&quot;_OLD</option>
+											<option value="8015229b-ad5c-4e8c-83b1-a7352508bbf5">ООО &quot;Логистик&quot;</option>
+											<option value="78e8ebbf-5d6d-4ffd-a144-90fcfa79fc55">ООО &quot;МАСМА ДВ&quot;</option>
+											<option value="eaab096f-8e88-452a-8239-cf4b52f6c148">ООО &quot;МЕГА-ОЙЛ&quot;</option>
+											<option value="9b9a39f8-7250-484b-ac4f-ada1e49d82dc">ООО &quot;Миллениум&quot;</option>
+											<option value="470c02f2-3176-444a-b28b-9f3112d2ed98">ООО &quot;Моторные масла&quot;_OLD</option>
+											<option value="5f3091c6-82b0-4049-baf1-e23a7c39305a">ООО &quot;НАВИГАТОР СМ&quot;</option>
+											<option value="3936bc64-4b96-4981-a779-ac5a13e264c0">ООО &quot;НСК-ОЙЛ&quot;</option>
+											<option value="19a13b7a-9980-4cd8-abcf-e23f78f2fd09">ООО &quot;Навигатор Плюс&quot;</option>
+											<option value="4f82218f-0c9d-4b19-94f2-627ad5523e62">ООО &quot;Нефтегазснаб&quot;</option>
+											<option value="ac88dc0e-c3e3-4aaa-86ca-7444c5fd90c3">ООО &quot;Новое направление&quot;</option>
+											<option value="f5eade11-87ac-4718-b97e-8090588b04d4">ООО &quot;ОЙЛХИТ&quot;</option>
+											<option value="88f00f11-ed84-4aea-9b8f-b966c6ff2335">ООО &quot;Оптимум&quot;</option>
+											<option value="4682bdba-85d2-4741-b107-3b0f561cef16">ООО &quot;ПК Уголь&quot;</option>
+											<option value="f30a9ecf-dc58-4aa6-a28d-b421a34f3e05">ООО &quot;ПМК&quot;</option>
+											<option value="4dee13d4-593d-4441-8ebb-f6513a568e8c">ООО &quot;ПОЛИРЕСУРС&quot;_OLD</option>
+											<option value="f0cdd798-ced0-442c-a3f6-69bca9349f95">ООО &quot;ПРК&quot;</option>
+											<option value="71889a66-fb1b-49a9-9930-b476831d7e9d">ООО &quot;ПРОФИ СМ&quot;</option>
+											<option value="f688d618-0774-422f-ae4c-84541c191826">ООО &quot;Прогресс-СМ&quot;</option>
+											<option value="ce4c34e5-120a-4024-b00e-b3aaac518fb3">ООО &quot;Промсервис&quot;_OLD</option>
+											<option value="bd3f1409-ef4e-47a8-aed1-c10720f7e450">ООО &quot;ПрусОйлСнаб&quot;_OLD</option>
+											<option value="3abcd5c0-bc6b-40ec-b56e-c7fd773479af">ООО &quot;РБК&quot;</option>
+											<option value="dcd48db1-9aaa-4cd6-a901-9c2c02b9c683">ООО &quot;РЕСНА&quot;</option>
+											<option value="dbcef951-9e0b-4b18-b45f-d5620e48107e">ООО &quot;РОСИНВЕСТ-Ойл&quot;</option>
+											<option value="4f5a8b68-3698-412f-8858-2623fa7df985">ООО &quot;РПТК&quot;</option>
+											<option value="f471441b-fc44-4818-9cc3-bab83851dc29">ООО &quot;РусХОЛТС&quot;</option>
+											<option value="229f0df3-9458-48b2-b275-3ddd52a5c327">ООО &quot;Русинвест-торг&quot;</option>
+											<option value="3953df2d-7f82-4584-adf3-fa177ce41734">ООО &quot;СДМ&quot;</option>
+											<option value="8fdd64ee-a52d-4979-8f3f-a5f9fa7b9c8e">ООО &quot;СК-Авто&quot;</option>
+											<option value="c038971e-5269-4229-a14c-ffea65439e4b">ООО &quot;СМАРТ&quot;</option>
+											<option value="f0a210dc-423f-4b60-8090-27f610ff96b9">ООО &quot;СОВ&quot;</option>
+											<option value="4bab66fc-c9df-425e-a9ff-ea63fc05473f">ООО &quot;СОУ&quot;</option>
+											<option value="46f44029-7ca8-400b-81ce-60f9834e6a60">ООО &quot;СТИЛЬ АВТО МАСЛА&quot;</option>
+											<option value="163c2414-93f2-4872-9c57-bc2eb5cb85d4">ООО &quot;Северный склад&quot;</option>
+											<option value="eb1e4887-df05-4cd0-8baa-8e8768fdaa33">ООО &quot;Сибкомплект&quot;</option>
+											<option value="fd57f0dd-d642-448e-bc4c-8d94b704ad30">ООО &quot;Снабойл&quot;</option>
+											<option value="69cef9dd-e6de-4041-b802-6f64cc25ac56">ООО &quot;Современные смазочные
+												материалы&quot;</option>
+											<option value="c15097ee-8c93-4721-bc57-2787f48e6d47">ООО &quot;Спотойл&quot;</option>
+											<option value="ea627359-6aa4-48e9-b7d8-89504fe1b4ab">ООО &quot;ТД Гудвилл&quot;</option>
+											<option value="a58f6a3d-6835-4806-b812-a93163272be3">ООО &quot;ТЕХМАРКЕТ&quot;_OLD</option>
+											<option value="78c695c0-1e24-43af-b3cc-5bc662de8ce4">ООО &quot;ТандемАгро&quot;</option>
+											<option value="6fc68f78-be06-43de-b217-549006271793">ООО &quot;Техно Ойл&quot;</option>
+											<option value="5cb8d597-a912-481a-8ccb-0b9f24092a7b">ООО &quot;Товары Настоящего Качества
+												Трейдинг&quot;_OLD</option>
+											<option value="b9e43fde-acd9-4094-91e7-6aceef3641a6">ООО &quot;Тополек&quot;</option>
+											<option value="75887c2d-557c-4a8c-85ca-52fe9501c4dd">ООО &quot;Трактородеталь Групп&quot;</option>
+											<option value="26802b90-75ed-4410-94d2-54cefc82b4c2">ООО &quot;ЭНИКС ЛТД&quot;</option>
+											<option value="5d099e00-51b5-471d-9931-2e4d4648ae80">ООО &quot;Юг Сайлс&quot;</option>
+											<option value="282be2f3-0eed-4bba-874f-af912e6617f7">ООО &quot;ЯСМ&quot;</option>
+											<option value="98c3e25f-774a-4774-b6c1-46e77b060197">ООО АК &quot;Энергия&quot;</option>
+											<option value="127ca8b6-7581-4a6d-8b81-b1409eebb9dc">ООО ГРУППА КОМПАНИЙ
+												&quot;ТЕХСНАБКОМПЛЕКТ&quot;</option>
+											<option value="97aac471-1708-4bb1-8f84-575defeb554d">ООО Компания &quot;Горст-СМ&quot;</option>
+											<option value="cb1ef3ee-b63a-479b-92ea-5b93909c8dcb">ООО МИТЛИС</option>
+											<option value="e3f9a240-d621-49dd-bed7-e764f46b30a9">ООО Позитивная энергия</option>
+											<option value="af08cb1b-c62a-453b-b4c7-37d2d5151bca">ООО Промышленная Группа &quot;РИ&quot;
+											</option>
+											<option value="d340e89f-4ec0-4a9f-a8d3-4a229deac1b3">ООО Промышленные масла</option>
+											<option value="5d98288d-9127-4be8-a422-68574edc69c3">ООО ТД &quot;Сибирь-Ойл&quot;</option>
+											<option value="3ec4f11b-e600-4f4c-b1e9-290b3eb1e8a1">ООО Феникс-Авто Премиум</option>
+											<option value="0bb884dc-f9a0-42e8-afc9-eb25fbc33e02">ОСОО &quot;Синтэко&quot;</option>
+											<option value="ba6b92d5-ecb1-4496-99a2-2a5d41d339b6">ОсОО &quot;НГСА&quot;</option>
+											<option value="c039b1b4-309f-4cd0-b159-df4d5f2a523b">ОсОО &quot;Примэкс&quot;</option>
+											<option value="0a19d766-647e-4312-80ef-10011f67744f">ОсОО &quot;Фирма ЮниОйл&quot;</option>
+											<option value="6cceddea-6f4b-4fde-8ab0-59e9c38dc273">Сиванабел ООО</option>
+											<option value="c512a336-cb23-4952-8a3a-e6b0573f7702">ТОО &quot;ADM Machinery and Service&quot;
+											</option>
+											<option value="5f68a3ae-cabd-46df-8135-2d315682ffd9">ТОО &quot;АСУ-АВТО&quot;</option>
+											<option value="0aa2dd1f-087d-429d-8b67-9a8fa1774f8d">ТОО &quot;Ник-Ойл&quot;</option>
+											<option value="8ad5fa78-336b-48cc-8091-fd6a94174565">ТОО &quot;Оралсбытойл&quot;</option>
+											<option value="2abc7494-e41e-4d87-8349-044b693b052b">ТОО DSF Trading Co</option>
+											<option value="1333818d-ac53-4bf6-b9e6-44a85ea657f8">ТОО Интрейд</option>
+											<option value="d7509ac3-037d-4554-b17a-9a85bf61943b">ТОО Костанай АвтоСнаб</option>
+											<option value="861fdc84-81b3-4dcb-96c6-cec6c0cd89b1">ТОО Лад-Алматы</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 px-12 mb-17">
+								<div class="pos-r">
+									<select name="user"
+													class="selectpicker"
+													data-style="form-control input-border"
+													data-width="100%"
+													data-live-search="true"
+													title="Торговый представитель">
+									</select>
+								</div>
+							</div>
+
+							<div class="col-12 px-12 mb-17">
+								<div class="pos-r">
+									<input class="form-control input-border validate"
+												 type="text"
+												 placeholder=" "
+												 value=""
+												 name="name">
+									<label class="input-label">Наименование ТТ</label>
+								</div>
+							</div>
+
+							<div class="col-12 px-12 mb-17">
+								<div class="pos-r">
+									<input class="form-control input-border validate"
+												 type="text"
+												 placeholder=" "
+												 value=""
+												 name="address">
+									<label class="input-label">Адрес ТТ</label>
+								</div>
+							</div>
+
+							<div class="col-12 px-12">
+								<div class="pos-r">
+									<textarea class="modal-textarea input-border input-white validate"
+														name="note"
+														placeholder=" "></textarea>
+									<label class="textarea-label">Краткий комментарий...</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="row mx--12">
+							<div class="col-12 px-12">
+								<div class="modal-form-actions">
+									<button class="submit-btn modal-submit-btn mt-24"
+													type="submit">Добавить</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--jQueryUI-->
+	<script src="./auth/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+	<!--Loader-->
+	<script src="./auth/assets/plugins/loader/loader.js"></script>
+	<!--jQueryForm-->
+	<script src="./auth/assets/plugins/jquery-form/jquery.form.min.js"></script>
+	<!--bootbox-->
+	<script src="./auth/assets/plugins/bootbox/bootbox.min.js.1"></script>
+	<!--input-mask-->
+	<script src="./auth/assets/plugins/inputmask/jquery.maskedinput.min.js"></script>
+	<!--paginiation-->
+	<script src="./auth/assets/plugins/pagination/pagination.js"></script>
+
+	<script src="./auth/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="./auth/libs/bootstrap-fileinput/js/fileinput.min.js"></script>
+	<script src="./auth/libs/bootstrap-fileinput/js/locales/ru.js"></script>
+	<script src="./auth/libs/datepicker-bootstrap/js/datepicker.js"></script>
+	<script src="./auth/libs/datepicker-bootstrap/js/datepicker.ru-RU.js"></script>
+	<script src="./auth/libs/DataTables/datatables.min.js"></script>
+	<script src="./auth/libs/jquery.maskedinput.min.js"></script>
+	<script src="./auth/js/scripts.js"></script>
+
+	<script src="./auth/assets/plugins/fancybox/jquery.fancybox.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="./auth/npm/bootstrap-select%401.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+
+	<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+	<script src="./auth/npm/bootstrap-select%401.14.0-beta3/dist/js/i18n/defaults-ru_RU.min.js"></script>
+	<!--init.js-->
+	<script src="./auth/assets/js/config.js"></script>
+	<script src="./auth/assets/js/init.js"></script>
+	<script src="./auth/assets/js/app.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+.footer {
+	background: rgb(69, 69, 69);
+	background-image: url('./../images/grid.png'), linear-gradient(158deg, rgba(69, 69, 69, 1) 0%, rgba(19, 20, 24, 1) 52%, rgba(19, 20, 24, 1) 64%, rgba(69, 69, 69, 1) 100%);
+	padding: 66px 0 42px;
+	color: #fff;
+
+	a {
+		&:hover {
+			text-decoration: none;
+			color: #ff5200;
+		}
+	}
+
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 67px;
+		gap: 20px;
+
+		.footer__logo {
+			max-width: 248px;
+		}
+	}
+
+	&__menu {
+		&-container {
+			display: flex;
+			gap: 90px;
+		}
+
+		&-title {
+			color: #FFF;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 18px;
+			margin-bottom: 18px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__link {
+		color: #FFF;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 30px;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__info {
+		display: flex;
+		gap: 31px;
+		align-items: flex-end;
+
+		p {
+			padding: 0;
+			margin: 0;
+		}
+
+		p:last-child {
+			color: #FF5200;
+
+			a {
+				color: #FF5200;
+			}
+		}
+	}
+}

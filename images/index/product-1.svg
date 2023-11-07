@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M99 50C99 77.062 77.062 99 50 99C22.938 99 1 77.062 1 50C1 22.938 22.938 1 50 1C77.062 1 99 22.938 99 50Z" fill="white" stroke="#FF5200" stroke-width="2"/>
+<path d="M67.5 38H73C74.6569 38 76 36.6569 76 35V35C76 33.3431 74.6569 32 73 32H28C26.3431 32 25 33.3431 25 35V35C25 36.6569 26.3431 38 28 38H61" stroke="#FF5200" stroke-width="2"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M50.4641 37H64L58.5089 40.6251H50.3726C48.9805 40.6251 47.9593 40.9628 47.3421 42.2877L43.8193 50.1666C42.8012 52.3703 44.9241 52.3703 44.9241 52.3703H50.8429L52.98 47.5544H48.2023L54.5631 43.2886H60.8559L55.2118 56H43.9882C40.4937 56 35.6971 54.247 39.25 46.9952L41.8732 41.1376C43.0727 38.6747 45.3298 37.0362 50.4641 37Z" fill="#FF5200"/>
+<path d="M34 61H28C26.3431 61 25 62.3431 25 64V64C25 65.6569 26.3431 67 28 67H73C74.6569 67 76 65.6569 76 64V64C76 62.3431 74.6569 61 73 61H59" stroke="#FF5200" stroke-width="2"/>
+<rect x="25" y="20" width="51" height="6" rx="3" stroke="#FF5200" stroke-width="2"/>
+<rect x="25" y="74" width="51" height="6" rx="3" stroke="#FF5200" stroke-width="2"/>
+<line x1="30" y1="26" x2="30" y2="32" stroke="#FF5200" stroke-width="2"/>
+<line x1="30" y1="67" x2="30" y2="73" stroke="#FF5200" stroke-width="2"/>
+<line x1="30" y1="38" x2="30" y2="61" stroke="#FF5200" stroke-width="2"/>
+<line x1="72" y1="26" x2="72" y2="32" stroke="#FF5200" stroke-width="2"/>
+<line x1="72" y1="67" x2="72" y2="73" stroke="#FF5200" stroke-width="2"/>
+<line x1="72" y1="38" x2="72" y2="61" stroke="#FF5200" stroke-width="2"/>
+</svg>

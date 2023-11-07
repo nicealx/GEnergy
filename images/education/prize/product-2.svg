@@ -1,0 +1,13 @@
+<svg width="172" height="172" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M86 170C132.392 170 170 132.392 170 86C170 39.6081 132.392 2 86 2C39.6081 2 2 39.6081 2 86C2 132.392 39.6081 170 86 170Z" fill="white" stroke="#FF5200" stroke-width="3.36"/>
+<rect x="33.68" y="72.68" width="93.64" height="58.64" rx="12.32" stroke="#FF5200" stroke-width="3.36"/>
+<line x1="44" y1="111.32" x2="60" y2="111.32" stroke="#FF5200" stroke-width="3.36"/>
+<line x1="63" y1="111.32" x2="79" y2="111.32" stroke="#FF5200" stroke-width="3.36"/>
+<line x1="44" y1="119.32" x2="88" y2="119.32" stroke="#FF5200" stroke-width="3.36"/>
+<line x1="83" y1="111.32" x2="99" y2="111.32" stroke="#FF5200" stroke-width="3.36"/>
+<line x1="102" y1="111.32" x2="118" y2="111.32" stroke="#FF5200" stroke-width="3.36"/>
+<circle cx="113" cy="68" r="26.32" fill="white" stroke="#FF5200" stroke-width="3.36"/>
+<circle cx="113" cy="68" r="19.32" fill="white" stroke="#FF5200" stroke-width="3.36"/>
+<path d="M113.5 60V76.5" stroke="#FF5200" stroke-width="3.36" stroke-linecap="round"/>
+<path d="M121.75 68.25L105.25 68.25" stroke="#FF5200" stroke-width="3.36" stroke-linecap="round"/>
+</svg>
